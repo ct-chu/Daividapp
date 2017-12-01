@@ -7,7 +7,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
     	<script>
     		function playSound() {
-          	var sound = document.getElementById("audio");
+          	var sound = document.getElementById("audio1");
+          	sound.play();
+      		}
+      		function playSound2() {
+          	var sound = document.getElementById("audio2");
           	sound.play();
       		}
     	</script>
@@ -24,11 +28,12 @@
 							<ul class="actions vertical">
 								<li></li>
 								<li></li>
-								<audio id="audio" src="sound/skin.wav" autostart="false" ></audio>
+								<audio id="audio1" src="sound/skin.wav" autostart="false" ></audio>
 								<li><a onclick="playSound();" class="button big wide smooth-scroll-middle">收皮啦你</a></li>
 								<li><a onclick="playSound();" class="button big wide smooth-scroll-middle">收皮啦你</a></li>
-								<li><a onclick="playSound();" class="button big wide smooth-scroll-middle">收皮啦你</a></li>
-								<li><a onclick="playSound();" class="button big wide smooth-scroll-middle">收皮啦你</a></li>	
+								<audio id="audio2" src="sound/shit.wav" autostart="false" ></audio>
+								<li><a onclick="playSound2();" class="button big wide smooth-scroll-middle">食屎啦你</a></li>
+								<li><a onclick="playSound2();" class="button big wide smooth-scroll-middle">食屎啦你</a></li>	
 							</ul>
 						</div>
 						<div class="image">
